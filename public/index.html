@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>StarsEarth</title>
+    <style media="screen">
+      body {
+        font-family: Roboto, Arial, sans-serif;
+        background: #ECEFF1;
+        color: rgba(0,0,0,0.87);
+      }
+
+      a {
+        color: rgb(3,155,229);
+      }
+
+      #message {
+        max-width: 400px;
+        margin: 40px auto;
+        box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2),0 1px 1px 0 rgba(0,0,0,0.14),0 2px 1px -1px rgba(0,0,0,0.12);
+        border-radius: 2px;
+        background: white;
+        padding: 16px 24px;
+      }
+
+      #message h1 {
+        font-size: 22px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0 0 16px;
+      }
+
+      #message p {
+        font-weight: 300;
+        line-height: 150%;
+        text-align: center;
+      }
+
+      #message ul {
+        list-style: none;
+        margin: 16px 0 0;
+        padding: 0;
+        text-align: center;
+      }
+
+      #message li a {
+        display: inline-block;
+        padding: 8px;
+        text-transform: uppercase;
+        text-decoration: none;
+        font-weight: 500;
+        background: rgb(3,155,229);
+        color: white;
+        border: 1px solid rgb(3,155,229);
+        border-radius: 3px;
+        font-size: 14px;
+        box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+      }
+
+      .img-logo {
+          text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <script>
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId: "258071734574109",
+          xfbml: true,
+          version: "v2.6"
+        });
+
+      };
+
+      (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) { return; }
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+    </script>
+    <div id="message">
+      <div class="img-logo">
+        <img id="imgLogo" class="imgLogo" src="/images/logo.png" alt="StarsEarth logo">
+      </div>
+      <h1>StarsEarth teaches you Indian Sign Language</h1>
+      <p>You can use our bot on Facebook Messenger</p>
+      <ul>
+        <li><div class="fb-messengermessageus" 
+                messenger_app_id="258071734574109" 
+                page_id="193450260781502"
+                color="blue"
+                size="xlarge" ></li>
+      </ul><br/>
+      <!--<h1>Visually impaired?</h1>
+      <p>You can use our android app designed specially for the visually impaired</p>
+      <ul>
+        <li><div class="fb-messengermessageus" 
+                messenger_app_id="258071734574109" 
+                page_id="193450260781502"
+                color="blue"
+                size="xlarge" ></li>
+      </ul>-->
+      <p>You can also like us on Facebook to follow our updates</p>
+      <div class="fb-like" data-href="https://www.facebook.com/starsearth" 
+          data-layout="standard" data-action="like" data-size="large" data-show-faces="true" data-share="false"></div>
+
+    </div>
+
+  </body>
+</html>
